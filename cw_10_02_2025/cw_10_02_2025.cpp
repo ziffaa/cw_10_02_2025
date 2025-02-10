@@ -39,14 +39,14 @@ int WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
 
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	RECT rect;
-	GetWindowRect(hWnd, &rect);
 	switch (message)
 	{
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		break;
 	case WM_KEYDOWN:
+		RECT rect;
+		GetWindowRect(hWnd, &rect);
 		switch (wParam)
 		{
 		case VK_RETURN:
