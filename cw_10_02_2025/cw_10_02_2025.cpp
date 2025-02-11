@@ -17,8 +17,8 @@ int WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
 	wcl.cbClsExtra = 0;
 	wcl.cbWndExtra = 0;
 	wcl.hInstance = hInst;
-	wcl.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	wcl.hCursor = LoadCursor(NULL, IDC_ARROW);
+	wcl.hIcon = LoadIcon(hInst, MAKEINTRESOURCE(129));
+	wcl.hCursor = LoadCursor(hInst, MAKEINTRESOURCE(130));
 	wcl.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
 	wcl.lpszMenuName = NULL;
 	wcl.lpszClassName = szClassWindow;
